@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Fruitsbytes\LaravelMoncash\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelMoncashCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-moncash';
 
     public $description = 'My command';
 
