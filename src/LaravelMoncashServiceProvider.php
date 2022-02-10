@@ -2,9 +2,9 @@
 
 namespace Fruitsbytes\LaravelMoncash;
 
+use Fruitsbytes\LaravelMoncash\Commands\LaravelMoncashCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Fruitsbytes\LaravelMoncash\Commands\LaravelMoncashCommand;
 
 class LaravelMoncashServiceProvider extends PackageServiceProvider
 {

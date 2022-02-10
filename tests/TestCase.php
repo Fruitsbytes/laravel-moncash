@@ -2,9 +2,9 @@
 
 namespace Fruitsbytes\LaravelMoncash\Tests;
 
+use Fruitsbytes\LaravelMoncash\LaravelMoncashServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Fruitsbytes\LaravelMoncash\LaravelMoncashServiceProvider;
 
 class TestCase extends Orchestra
 {

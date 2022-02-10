@@ -4,7 +4,8 @@ namespace Fruitsbytes\LaravelMoncash;
 
 use Fruitsbytes\PHP\Moncash\Moncash;
 
-class LaravelMoncash extends Moncash {
+class LaravelMoncash extends Moncash
+{
     /**
      * @var string Default value 'sandbox'
      */
@@ -16,11 +17,12 @@ class LaravelMoncash extends Moncash {
 
     public bool $isProduction;
 
-    public function __construct() {
-        $this->client_id     = config( 'moncash.client_id' );
-        $this->client_secret = config( 'moncash.client_secret' );
-        $this->mode          = config( 'moncash.mode' );
-        $this->isProduction  = $this->mode === 'sandbox';
-        parent::__construct( $this->client_id, $this->client_secret, $this->mode );
+    public function __construct()
+    {
+        $this->client_id = config('moncash.client_id');
+        $this->client_secret = config('moncash.client_secret');
+        $this->mode = config('moncash.mode');
+        $this->isProduction = $this->mode === 'sandbox';
+        parent::__construct($this->client_id, $this->client_secret, $this->mode);
     }
 }
