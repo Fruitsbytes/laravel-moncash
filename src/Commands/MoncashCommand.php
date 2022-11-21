@@ -1,12 +1,12 @@
 <?php
 
-namespace Fruitsbytes\LaravelMoncash\Commands;
+namespace FruitsBytes\Laravel\MonCash\Commands;
 
 use Illuminate\Console\Command;
 
-class LaravelMoncashCommand extends Command
+class MoncashCommand extends Command
 {
-    public $signature = 'laravel-moncash';
+    public $signature = 'mon-cash';
 
     public $description = 'My command';
 

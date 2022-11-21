@@ -21,21 +21,21 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 
 You can install the package via composer:
 
-```bash
+```shell
 composer require fruitsbytes/laravel-moncash
 ```
 
 You can publish and run the migrations with:
 
-```bash
-php artisan vendor:publish --tag="laravel-moncash-migrations"
+```shell
+php artisan vendor:publish --tag="mon-cash-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
-```bash
-php artisan vendor:publish --tag="laravel-moncash-config"
+```shell
+php artisan vendor:publish --tag="mon-cash-config"
 ```
 
 This is the contents of the published config file:
@@ -46,31 +46,12 @@ return [
     'client_id'     => env( 'MON_CASH_CLIENT_ID', '' ),
     'client_secret' => env( 'MON_CASH_CLIENT_SECRET', '' ),
     'mode'          => env( 'MON_CASH_MODE', 'sandbox' ),
-    'endpoint'          => [
-        'sandbox'    => 'https://sandbox.moncashbutton.digicelgroup.com',
-        'production' => 'https://moncashbutton.digicelgroup.com'
-    ]
 ];
 
 ```
 
 Prerequiste
 -----
-
-<h3>Create an account</h3>
-
-1) Go to the [Moncash Sanbox portal](https://sandbox.moncashbutton.digicelgroup.com/Moncash-business/New)
-2) Add a new Buisiness
-3) Retrieve the <b>clientID</b> and <b>clientSecret</b>
-
-Online videos:
-- [Kijan pou mete Moncash sou sit ou pou w vann](https://youtu.be/lE3ejFT11_w)
-- [Comment Intégrer l'onglet Moncash Pay à votre commerce online - Technopro Web](https://youtu.be/NiWYrO_E5ik)  (🕊 Osirus)
-
-<p align="center">
-<a href="https://www.digicelgroup.com/ht/en/moncash/business.html" target="_blank">
-<img style="box-shadow: 2px 2px 1px #000000" 
-src="https://raw.githubusercontent.com/Fruitsbytes/php-moncash/main/demo_1.png" width="700"></a></p>
 
 
 
@@ -80,7 +61,7 @@ You need to set the `client_id` and `client_secret` in the `./config/moncash.php
 
 
 ```php
-$moncash = new Fruitsbytes\LaravelMoncash();
+$moncash = new FruitsBytes\LaravelMoncash();
 
 ```
 
@@ -102,38 +83,7 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
-## Credits
-
-- [Jeffrey N. Carre](https://github.com/Fruitsbytes)
-- [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-
-
-# Other Moncash projects
-
-## PHP
-The core library used to make this package: [Fruitsbytes/php-moncash](https://github.com/Fruitsbytes/php-moncash)
-
-## Wordpress
-For Woocommerce-Wordpress : [ecelestin/ecelestin-Moncash-sdk-php](https://github.com/ecelestin/ecelestin-Moncash-sdk-php
-)
-
-## NodeJS
-
-- [Fruitsbytes/nodejs-moncash]() _(with Typescript support)_
-- [ecelestin-Moncash-sdk-nodejs](https://github.com/ecelestin/ecelestin-Moncash-sdk-nodejs)
-
-## Web SDK
-
-### Javascript ES6
-- [Fruitsbytes/js-moncash-core]() _(with Typescript support)_
-
-### React
-- [Fruitsbytes/moncash/react-moncash]()
-
-### Angular
-- [Fruitsbytes/ng-moncash]()

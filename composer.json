@@ -1,53 +1,46 @@
 {
     "name": "fruitsbytes/laravel-moncash",
-    "description": "A Laravel package to communicate with Digicel Moncash Rest API version 1",
+    "description": "A Laravel package to facilitat epayment with Digicel MonCash",
     "keywords": [
-        "Fruitsbytes",
+        "FruitsBytes",
         "laravel",
-        "laravel-moncash"
+        "laravel-moncash",
+        "moncash",
+        "haiti",
+        "payment",
+        "mobile-money",
+        "pay-bills",
+        "php8",
+        "php"
     ],
     "homepage": "https://github.com/fruitsbytes/laravel-moncash",
     "license": "MIT",
     "authors": [
         {
             "name": "Jeffrey N. Carre",
-            "email": "jeffrey.carre@gmail.com",
+            "email": "2999487+bleuscyther@users.noreply.github.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "fruitsbytes/php-moncash": "^0.1.0@alpha",
-        "illuminate/contracts": "^8.73",
-        "spatie/laravel-package-tools": "^1.11.0"
+        "php": "^8.0"
     },
     "require-dev": {
-        "nunomaduro/collision": "^5.10",
-        "nunomaduro/larastan": "^1.0",
-        "orchestra/testbench": "^6.22",
-        "pestphp/pest": "^1.21",
-        "pestphp/pest-plugin-laravel": "^1.1",
-        "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5",
-        "spatie/laravel-ray": "^1.26"
+        "orchestra/testbench": "^7.13",
+        "phpunit/phpunit": "^9.5.26"
     },
     "autoload": {
         "psr-4": {
-            "Fruitsbytes\\LaravelMoncash\\": "src",
-            "Fruitsbytes\\LaravelMoncash\\Database\\Factories\\": "database/factories"
+            "FruitsBytes\\Laravel\\MonCash\\": "src",
+            "FruitsBytes\\Laravel\\MonCash\\Database\\Factories\\": "src/database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Fruitsbytes\\LaravelMoncash\\Tests\\": "tests"
+            "FruitsBytes\\Laravel\\MonCash\\Tests\\": "tests"
         }
     },
     "scripts": {
-        "analyse": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
         "sort-packages": true
@@ -55,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Fruitsbytes\\LaravelMoncash\\LaravelMoncashServiceProvider"
+                "FruitsBytes\\Laravel\\MonCash\\Providers\\MonCashServiceProvider"
             ],
             "aliases": {
-                "LaravelMoncash": "Fruitsbytes\\LaravelMoncash\\Facades\\LaravelMoncash"
+                "MonCash": "FruitsBytes\\Laravel\\MonCash\\Facades\\APIFacade"
             }
         }
     },

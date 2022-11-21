@@ -1,6 +1,6 @@
 <?php
 
-namespace Fruitsbytes\LaravelMoncash\Database\Factories;
+namespace FruitsBytes\LaravelMoncash\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
