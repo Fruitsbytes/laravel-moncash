@@ -15,7 +15,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/fruitsbytes/laravel-moncash.svg?style=flat-square)](https://packagist.org/packages/fruitsbytes/laravel-moncash)
 
 
-You can use the PHP library: [Fruitsbytes/php-moncash](https://github.com/Fruitsbytes/php-moncash) or checkout this cool Laravel examples using move native Laravel codes [Fruitsbytes/Laravel-Moncash-Example](https://github.com/Fruitsbytes/Laravel-Moncash-Example);
+You can use the PHP library: [Fruitsbytes/php-moncash](https://github.com/Fruitsbytes/php-moncash) or checkout this cool Laravel examples using more native Laravel codes [Fruitsbytes/Laravel-Moncash-Example](https://github.com/Fruitsbytes/Laravel-Moncash-Example);
 
 We are working on building a specific package for Laravel.
 
