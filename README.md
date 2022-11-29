@@ -14,8 +14,6 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/fruitsbytes/laravel-moncash/Check%20&%20fix%20styling?label=code%20style)](https://github.com/fruitsbytes/laravel-moncash/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/fruitsbytes/laravel-moncash.svg?style=flat-square)](https://packagist.org/packages/fruitsbytes/laravel-moncash)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
 
 You can use the PHP library: [Fruitsbytes/php-moncash](https://github.com/Fruitsbytes/php-moncash) or checkout this cool Laravel examples using move native Laravel codes [Fruitsbytes/Laravel-Moncash-Example](https://github.com/Fruitsbytes/Laravel-Moncash-Example);
 
